@@ -11,11 +11,11 @@ struct ContentView: View {
     @StateObject var vm = ViewModel()
     
     var body: some View {
-        if vm.authenticated {
+        if vm.authenticated{
             VStack(spacing: 20) {
                 Text("Welcome back **\(vm.username.lowercased())**!")
                 Text("Today is: **\(Date().formatted(.dateTime))**")
-                Button("Log out", action:vm.logOut)
+                Button("Log out", action: vm.logout)
                     .tint(.red)
                     .buttonStyle(.bordered)
                 
