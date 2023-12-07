@@ -4,6 +4,14 @@
 //
 //  Created by Silvana Tekia on 27/11/2023.
 //
+import SwiftUI
+struct User: Codable {
+    let userId: Int
+    let userForename: String
+    let userSurname: String
+    let userEmail: String
+    let userMobile: String
+}
 
 
 

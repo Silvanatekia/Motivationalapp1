@@ -15,7 +15,9 @@ struct ContentView: View {
             VStack(spacing: 20) {
                 Text("Welcome back **\(vm.username.lowercased())**!")
                 Text("Today is: **\(Date().formatted(.dateTime))**")
-                Button("Log out", action: vm.logout)
+                Button("Log out") {
+                    vm.logOut()
+                }
                     .tint(.red)
                     .buttonStyle(.bordered)
                 
