@@ -14,6 +14,8 @@
 		52B48AC72AF3AB8F00B993D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B48AC62AF3AB8F00B993D6 /* ContentView.swift */; };
 		52B48AC92AF3AB9400B993D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B48AC82AF3AB9400B993D6 /* Assets.xcassets */; };
 		52B48ACC2AF3AB9400B993D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B48ACB2AF3AB9400B993D6 /* Preview Assets.xcassets */; };
+		52C483FF2B912D3200D9BF5B /* MotivationalQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C483FE2B912D3200D9BF5B /* MotivationalQuoteView.swift */; };
+		52C484012B912D6900D9BF5B /* MotivationCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C484002B912D6900D9BF5B /* MotivationCategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		52B48AC62AF3AB8F00B993D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52B48AC82AF3AB9400B993D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52B48ACB2AF3AB9400B993D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52C483FE2B912D3200D9BF5B /* MotivationalQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationalQuoteView.swift; sourceTree = "<group>"; };
+		52C484002B912D6900D9BF5B /* MotivationCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivationCategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			children = (
 				52B48AC42AF3AB8F00B993D6 /* SilvappApp.swift */,
 				52B48AC62AF3AB8F00B993D6 /* ContentView.swift */,
+				52C484002B912D6900D9BF5B /* MotivationCategoryView.swift */,
+				52C483FE2B912D3200D9BF5B /* MotivationalQuoteView.swift */,
 				526D02F52B23D31A002C61A4 /* UserView.swift */,
 				526D02F92B23D39B002C61A4 /* UserDetailsView.swift */,
 				526D02FB2B23D3B3002C61A4 /* ContentViewModel.swift */,
@@ -146,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C484012B912D6900D9BF5B /* MotivationCategoryView.swift in Sources */,
+				52C483FF2B912D3200D9BF5B /* MotivationalQuoteView.swift in Sources */,
 				526D02FA2B23D39B002C61A4 /* UserDetailsView.swift in Sources */,
 				52B48AC72AF3AB8F00B993D6 /* ContentView.swift in Sources */,
 				526D02F62B23D31A002C61A4 /* UserView.swift in Sources */,
