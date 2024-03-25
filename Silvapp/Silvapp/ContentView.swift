@@ -21,20 +21,7 @@ struct ContentView: View {
                 
         }
     }
-        //if vm.authenticated{
-            //VStack(spacing: 20) {
-                //Text("Welcome back **\(vm.username.lowercased())**!")
-                //Text("Today is: **\(Date().formatted(.dateTime))**")
-               // Button("Log out") {
-                   // vm.logOut()
-               // }
-                   // .tint(.red)
-                    //.buttonStyle(.bordered)
-                
-           // }
             
-        //}else {
-
 struct LoginView: View {
     @Binding var isLoggedIn: Bool
     @State private var username: String = ""
@@ -74,7 +61,7 @@ struct LoginView: View {
                             .padding(.horizontal)
                         
                         Button(action: {
-                            // Simple login logic with sample username and password
+                          
                             if username == "username" && password == "password" {
                                 isLoggedIn = true
                             } else {

@@ -15,7 +15,7 @@ struct MotivationQuotesView: View {
     init(category: String) {
         self.category = category
         
-        // Initialize quotes based on the category
+      
         switch category {
         case "Self Love":
             self.quotes = [
@@ -48,6 +48,11 @@ struct MotivationQuotesView: View {
     
     var body: some View {
         VStack {
+            ProgressView(value: Double(currentQuoteIndex + 1),total:Double(quotes.count))
+                .progressViewStyle(LinearProgressViewStyle())
+                .padding()
+            
+            
             Text(quotes[currentQuoteIndex])
                 .font(.title)
                 .padding()
@@ -61,6 +66,6 @@ struct MotivationQuotesView: View {
                 }
         }
         .navigationBarTitle(category)
-        .background(Color.blue.edgesIgnoringSafeArea(.all))
+        .background(Color.brown.opacity(0.90).edgesIgnoringSafeArea(.all))
     }
 }
