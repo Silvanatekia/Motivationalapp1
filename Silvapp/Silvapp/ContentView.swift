@@ -24,16 +24,17 @@ struct ContentView: View {
             
 struct LoginView: View {
     @Binding var isLoggedIn: Bool
-    @State private var username: String = ""
-    @State private var password: String = ""
+    @State private var username: String = "username"
+    @State private var password: String = "password"
     @State private var showAlert = false
     
     var body: some View {
         NavigationView {
             VStack {
                 ZStack{
-                    Color.brown.opacity(0.90)
+                    Color.blue
                         .ignoresSafeArea()
+                        
                     Circle()
                         .scale(1.7)
                         .foregroundColor(.white.opacity(0.3))
@@ -72,7 +73,7 @@ struct LoginView: View {
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(maxWidth: .infinity)
-                                .background(Color.brown)
+                                .background(Color.blue)
                                 .cornerRadius(8)
                                 .padding(.horizontal)
                         }
@@ -83,9 +84,10 @@ struct LoginView: View {
                         Spacer()
                     }
                 }
-                .background(Color.blue.edgesIgnoringSafeArea(.all))
+                .background(Color.pink.edgesIgnoringSafeArea(.all))
             }
         }
+        .accentColor(Color(.label))
     }
 }
 

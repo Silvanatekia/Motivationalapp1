@@ -12,10 +12,26 @@ struct MotivationQuotesView: View {
     let quotes: [String]
     @State private var currentQuoteIndex = 0
     
+    var backgroundColor: Color {
+        switch category {
+        case "Self Love":
+            return Color.orange.opacity(0.5)
+        case "Gratitude":
+            return Color.green.opacity(0.5)
+        case "Financial Growth":
+            return Color.blue.opacity(0.5)
+        case "Spritual Growth":
+            return Color.pink.opacity(0.5)
+    default:
+        return Color.pink.opacity(0.5)
+    }
+    }
+    
     init(category: String) {
         self.category = category
+            
         
-      
+        
         switch category {
         case "Self Love":
             self.quotes = [
@@ -43,29 +59,43 @@ struct MotivationQuotesView: View {
             ]
         default:
             self.quotes = []
+                
         }
     }
     
     var body: some View {
-        VStack {
-            ProgressView(value: Double(currentQuoteIndex + 1),total:Double(quotes.count))
-                .progressViewStyle(LinearProgressViewStyle())
-                .padding()
+        ZStack(alignment: .top) {
+            backgroundColor
+                .ignoresSafeArea()
             
             
-            Text(quotes[currentQuoteIndex])
-                .font(.title)
-                .padding()
-                .onTapGesture {
-                    // Display next quote when tapped
-                    if currentQuoteIndex < quotes.count - 1 {
-                        currentQuoteIndex += 1
-                    } else {
-                        currentQuoteIndex = 0 // Restart from the beginning
+            VStack {
+            
+                ProgressView(value: Double(currentQuoteIndex + 1),total:Double(quotes.count))
+                    .progressViewStyle(LinearProgressViewStyle())
+                    .padding()
+                  
+               Spacer()
+                
+                Text(quotes[currentQuoteIndex])
+                    .font(.title)
+                    .padding()
+                    .onTapGesture {
+                        // Display next quote when tapped
+                        if currentQuoteIndex < quotes.count - 1 {
+                            currentQuoteIndex += 1
+                        } else {
+                            currentQuoteIndex = 0 // Restart from the beginning
+                        }
+                        
                     }
-                }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    
+            }
+            .navigationBarTitle(category)
+            .offset(y: -80)
+            .background(Color.white.opacity(0.5))
         }
-        .navigationBarTitle(category)
-        .background(Color.brown.opacity(0.90).edgesIgnoringSafeArea(.all))
+        
     }
 }

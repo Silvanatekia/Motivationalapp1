@@ -67,8 +67,8 @@
 				52C483FE2B912D3200D9BF5B /* MotivationalQuoteView.swift */,
 				526D02F52B23D31A002C61A4 /* UserView.swift */,
 				526D02F92B23D39B002C61A4 /* UserDetailsView.swift */,
-				526D02FB2B23D3B3002C61A4 /* ContentViewModel.swift */,
 				52B48AC82AF3AB9400B993D6 /* Assets.xcassets */,
+				526D02FB2B23D3B3002C61A4 /* ContentViewModel.swift */,
 				52B48ACA2AF3AB9400B993D6 /* Preview Content */,
 			);
 			path = Silvapp;

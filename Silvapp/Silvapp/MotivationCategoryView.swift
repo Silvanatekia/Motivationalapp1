@@ -10,35 +10,60 @@ import SwiftUI
 struct MotivationCategoryView: View {
     var body: some View {
         
-        NavigationView {
-                
-            VStack {
-              Color.brown.opacity(0.90)
+        NavigationStack {
+            
+            ZStack {
+                Color.white.opacity(0.9)
                     .ignoresSafeArea()
-                    List {
-                        NavigationLink(destination: MotivationQuotesView(category: "Self Love")) {
-                            Text("Self Love")
-                        }
-                        NavigationLink(destination: MotivationQuotesView(category: "Gratitude")) {
-                            Text("Gratitude")
-                        }
-                        NavigationLink(destination: MotivationQuotesView(category: "Financial Growth")) {
-                            Text("Financial Growth")
-                        }
-                        NavigationLink(destination: MotivationQuotesView(category: "Spiritual Growth")) {
-                            Text("Spiritual Growth")
-                        }
+                List {
+                    NavigationLink(destination: MotivationQuotesView(category: "Self Love")){
+                        
+                        Text("Self Love")
+                            .bold()
+                            .frame(width: 400, height: 120)
+                            .background(Color.orange.opacity(0.5))
+                            .padding(.bottom)
+                        
+                        
                     }
-                    .navigationBarTitle("Motivation Categories")
-                    .listStyle(GroupedListStyle())
+                    
+                    NavigationLink(destination: MotivationQuotesView(category: "Gratitude")) {
+                        Text("Gratitude")
+                            .bold()
+                            .frame(width: 400, height: 120)
+                            .background(Color.green.opacity(0.5))
+                            .padding(.zero)
+                    }
+                    NavigationLink(destination: MotivationQuotesView(category: "Financial Growth")) {
+                        Text("Financial Growth")
+                            .bold()
+                            .frame(width: 400, height: 120)
+                            .background(Color.blue.opacity(0.5))
+                            .padding(.bottom)
+                    }
+                    NavigationLink(destination: MotivationQuotesView(category: "Spiritual Growth")) {
+                        Text("Spiritual Growth")
+                            .bold()
+                            .frame(width: 400, height: 120)
+                            .background(Color.pink.opacity(0.5))
+                            .padding(.bottom)
+                    }
                 }
-            .background(Color.brown.opacity(0.90).ignoresSafeArea(.all))
+                .navigationBarTitle("Motivation Categories")
+                .padding()
+                .listStyle(GroupedListStyle())
+                .offset(y: -15)
+               
             }
-        
             
         }
+        .scrollContentBackground(.hidden)
         
     }
-
+    
+}
+#Preview {
+    MotivationCategoryView()
+}
         
 
