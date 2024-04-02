@@ -12,9 +12,12 @@ struct MotivationCategoryView: View {
         
         NavigationStack {
             
+            
             ZStack {
                 Color.white.opacity(0.9)
                     .ignoresSafeArea()
+                    
+                   
                 List {
                     NavigationLink(destination: MotivationQuotesView(category: "Self Love")){
                         
@@ -23,8 +26,6 @@ struct MotivationCategoryView: View {
                             .frame(width: 400, height: 120)
                             .background(Color.orange.opacity(0.5))
                             .padding(.bottom)
-                        
-                        
                     }
                     
                     NavigationLink(destination: MotivationQuotesView(category: "Gratitude")) {
@@ -49,7 +50,7 @@ struct MotivationCategoryView: View {
                             .padding(.bottom)
                     }
                 }
-                .navigationBarTitle("Motivation Categories")
+                .navigationBarTitle("What do you want focus on?", displayMode: .inline)
                 .padding()
                 .listStyle(GroupedListStyle())
                 .offset(y: -15)
@@ -57,8 +58,9 @@ struct MotivationCategoryView: View {
             }
             
         }
+       
         .scrollContentBackground(.hidden)
-        
+  
     }
     
 }

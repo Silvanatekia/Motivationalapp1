@@ -35,15 +35,45 @@ struct MotivationQuotesView: View {
         switch category {
         case "Self Love":
             self.quotes = [
-                "Love yourself first and everything else falls into line. You really have to love yourself to get anything done in this world. - Lucille Ball",
-                "To love oneself is the beginning of a lifelong romance. - Oscar Wilde",
-                "Self-love, my liege, is not so vile a sin, as self-neglecting. - William Shakespeare"
+                "Love yourself first and everything else falls into line. You really have to love yourself to get anything done in this world.",
+                "One of the greatest regrets in life is being what others would want you to be, rather than being yourself",
+                "You yourself, as much as anybody in the entire universe, deserve your love and affection.",
+                "Your self-worth is determined by you. You don’t have to depend on someone telling you who you are.",
+                "Find your purpose and fling your life out to it. Find a way or make one. Try with all your might. Self-made or never made",
+                "The hardest challenge is to be yourself in a world where everyone is trying to make you be somebody else.",
+                "I am somebody. I am me. I like being me. And I need nobody to make me somebody.",
+                "The best way to gain self-confidence is to do what you are afraid to do",
+                "Accepting yourself only as long as you look a certain way isn’t self love, it’s self destruction.",
+                "Tell yourself how wonderful you are, how great you are. Tell yourself how much you love yourself.",
+                "Healthy self love means being gentle with the soul within you. To love oneself is the purest, bravest thing. Anybody in the entire world can experience self love. Just do the simple acts of love for yourself, and then your authentic self begins.",
+                "Self-love is necessary for a functional and successful life",
+                "Never allow someone to be your priority while allowing yourself to be their option",
+                "HOW YOU LOVE YOURSELF IS HOW YOU TEACH OTHERS TO LOVE YOU.",
+                "To fall in love with yourself is the first secret to happiness",
+                "You are free, you are powerful, you are good, you are love, you have value you have a purpose. All is well.",
+                "Self love—it doesn't mean that everyone will treat you the way you deserve to be treated. It means that you won't let them change the way you see yourself; nor will you stick around for them to destroy you.",
+                "You are good enough to make whatever you want to achieve possible. You just need to find your talent and passion, then put a heck a lot of work into it",
+                "Follow your passion. Stay true to yourself. Never follow someone else’s path unless you’re in the woods and you’re lost and you see a path. By all means, you should follow that.",
+                "Put yourself first. Self-love is not selfish at all. It means that you’re taking care of yourself, and like my mom reinforced to me, to make sure that I was safe and that I was healthy."
             ]
         case "Gratitude":
             self.quotes = [
-                "Gratitude is the healthiest of all human emotions. The more you express gratitude for what you have, the more likely you will have even more to express gratitude for. - Zig Ziglar",
-                "Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough. - Oprah Winfrey",
-                "Gratitude can transform common days into thanksgivings, turn routine jobs into joy, and change ordinary opportunities into blessings. - William Arthur Ward"
+                "Gratitude is the healthiest of all human emotions. The more you express gratitude for what you have, the more likely you will have even more to express gratitude for.",
+                "Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough.",
+                "Gratitude can transform common days into thanksgivings, turn routine jobs into joy, and change ordinary opportunities into blessings.",
+                "Appreciation is a wonderful thing. It makes what is excellent in others belong to us as well.",
+                "Strive to find things to be thankful for, and just look for the good in who you are.",
+                "When you arise in the morning give thanks for the food and for the joy of living. If you see no reason for giving thanks, the fault lies only in yourself.",
+                "A thankful heart is not only the greatest virtue, but the parent of all the other virtues.",
+                "Acknowledging the good that you already have in your life is the foundation for all abundance.",
+                "Give thanks, greatful people are happy people",
+                "We can always find something to be thankful for, and there may be reasons why we ought to be thankful for even those dispensations which appear dark and frowning.",
+                "Live a life full of humility, gratitude, intellectual curiosity, and never stop learning.",
+                "Everything we do should be a result of our gratitude for what God has done for us.",
+                "Enjoy the little things, for one day you may look back and realize they were the big things.",
+                "The heart that gives thanks is a happy one, for we cannot feel thankful and unhappy at the same time.",
+                
+                
             ]
         case "Financial Growth":
             self.quotes = [
